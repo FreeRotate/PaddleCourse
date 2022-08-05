@@ -92,7 +92,6 @@ if __name__ == '__main__':
     paddle.save(model.state_dict(), './LR_model.pdparams')
     print('模型保存成功，模型参数保存在LR_model.pdparams中')
 
-
     model_dict = paddle.load('./LR_model.pdparams')
     model.load_dict(model_dict)
     model.eval()
